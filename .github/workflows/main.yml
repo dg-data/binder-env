@@ -8,9 +8,10 @@ jobs:
         DEBUG_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
         DEBUG_SECRET_KEY: ${{ secrets.DOCKER_USERNAME }}
       run: |
-        echo "${{ env.action_state }}=$DEBUG_PASSWORD" >> $GITHUB_ENV
+        echo "action_state=$DEBUG_PASSWORD" >> $GITHUB_ENV
         echo $DEBUG_SECRET_KEY >> secrets.txt
 
     - name: show stuff
       run: |
         echo "${{ env.action_state }}"
+        echo "=$DEBUG_PASSWORD" >> $GITHUB_ENV
