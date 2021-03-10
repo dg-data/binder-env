@@ -11,8 +11,8 @@ jobs:
         echo $DEBUG_PASSWORD >> secrets.txt
         echo $DEBUG_SECRET_KEY >> secrets.txt
   
-      - uses: EndBug/add-and-commit@v7.0.0
-        with:
-          author_name: github-actions
-          author_email: 41898282+github-actions[bot]@users.noreply.github.com
-          add: secrets.txt
+    - uses: EndBug/add-and-commit@v7.0.0
+      with:
+        author_name: github-actions
+        author_email: 41898282+github-actions[bot]@users.noreply.github.com
+        add: secrets.txt
