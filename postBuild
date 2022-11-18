@@ -18,4 +18,4 @@ echo '{
     "enabled": true
 }
 ' >> ~/.jupyter/lab/user-settings/@jupyterlab/extensionmanager-extension/plugin.jupyterlab-settings
-rm ~/.git
+rm -rf ~/.git
