@@ -27,3 +27,4 @@ dependencies:
       - jupyter-panel-proxy
       - qgrid
       - xlrd==1.2.0
+      - ipywidgets<8.0.0
