@@ -1,5 +1,4 @@
-source ~/anaconda3/etc/profile.d/conda.sh
-conda activate notebook
+conda activate ${NB_PYTHON_PREFIX}
 
 jupyter serverextension enable --py nbgitpuller --sys-prefix
 # Install QGrid for plain notebook-server.
