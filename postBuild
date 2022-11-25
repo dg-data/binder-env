@@ -1,6 +1,3 @@
-source ${CONDA_DIR}/bin/activate
-source activate ${NB_PYTHON_PREFIX}
-
 jupyter serverextension enable --py nbgitpuller --sys-prefix
 # Install QGrid for plain notebook-server.
 jupyter nbextension enable --py --sys-prefix qgrid
