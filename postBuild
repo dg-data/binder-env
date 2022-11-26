@@ -7,10 +7,10 @@ jupyter nbextension enable --py widgetsnbextension
 #jupyter labextension install --no-build @jupyter-widgets/jupyterlab-manager  # https://github.com/jupyter-widgets/ipywidgets/tree/master/packages/jupyterlab-manager
 #jupyter labextension install --no-build jupyter-matplotlib
 #jupyter labextension install jupyterlab-jupytext  # https://github.com/mwouts/jupytext/issues/276
-jupyter labextension uninstall --no-build qgrid2
+#jupyter labextension uninstall --no-build qgrid2
 jupyter labextension install @j123npm/qgrid2@1.1.4
-jupyter lab clean
-jupyter labextension install @jupyter-widgets/jupyterlab-manager --minimize=False
+#jupyter lab clean
+#jupyter labextension install @jupyter-widgets/jupyterlab-manager --minimize=False
 ## Enable plugins tab, to view installed versions.
 #
 mkdir -p ~/.jupyter/lab/user-settings/@jupyterlab/extensionmanager-extension
