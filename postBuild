@@ -19,4 +19,5 @@ echo '{
 rm -rf ~/.git
 wget https://github.com/vot/ffbinaries-prebuilt/releases/download/v4.2.1/ffprobe-4.2.1-linux-64.zip && \
     unzip ffprobe-4.2.1-linux-64.zip -d ffprobe && \
+    mkdir -p /home/jovyan/.local/bin && \
     cp ffprobe/ffprobe /home/jovyan/.local/bin
