@@ -4,7 +4,7 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - jupyter
+  - jupyterlab==3.4.5
   - nbgitpuller
   - pandas
   - geopandas
