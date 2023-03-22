@@ -31,3 +31,4 @@ dependencies:
       - aiohttp_proxy
       - undetected_chromedriver
       - ipylab
+      - jupyter_bokeh
